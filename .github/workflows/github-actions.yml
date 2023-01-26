@@ -1,0 +1,13 @@
+name: GitHub Actions run script
+run-name: ${{ github.actor }} is running script.py 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install python
+        run: sudo apt install python3
+      - name: Install pyrogram
+        run: pip3 install -U pyrogram
+      - name: Run script
+        run: python script.py
