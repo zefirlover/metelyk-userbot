@@ -10,6 +10,6 @@ jobs:
       - name: Install pyrogram
         run: |
           pip3 install -U pyrogram
-          ls /metelyk-userbot-A1
+          ls
       - name: Run script
         run: python script.py
