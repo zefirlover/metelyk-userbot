@@ -10,6 +10,7 @@ jobs:
       - name: Install pyrogram
         run: |
           pip3 install -U pyrogram
-          ls
+      - name: List files
+        run: ls
       - name: Run script
         run: python script.py
