@@ -1,6 +1,8 @@
 name: GitHub Actions run script
 run-name: ${{ github.actor }} is running script.py 🚀
-on: [push]
+on:
+  schedule:
+  - cron: "0 * * * *"
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
