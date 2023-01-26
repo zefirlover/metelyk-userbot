@@ -8,7 +8,8 @@ jobs:
       - name: Install python
         run: sudo apt install python3
       - name: Install pyrogram
-        run: pip3 install -U pyrogram
-        run: ls /metelyk-userbot-A1
+        run: |
+          pip3 install -U pyrogram
+          ls /metelyk-userbot-A1
       - name: Run script
         run: python script.py
