@@ -4,7 +4,7 @@ api_id = 18533141
 api_hash = "1a4ca40f3d29182267c4a506a1e6e644"
 
 chat_id = "@FormatA1_UUA"
-reaction = "🤡"
+reaction = "😴"
 app = Client("my_account", api_id, api_hash)
 
 async def main():
