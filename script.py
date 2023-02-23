@@ -1,7 +1,7 @@
 from pyrogram import Client, types
 import os
 
-github_token = os.environ.get('API_ID')
+github_token = os.environ.get('Test')
 print("API_ID: " + github_token)
 
 
