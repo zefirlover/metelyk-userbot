@@ -1,4 +1,4 @@
-# Metelyk Userbot
+# Metelyk Userbot 🦋
 
 Metelyk Userbot is a project that uses a self-operated Telegram account that is using to set reactions to every post in some Telegram channel written on python using a Pyrogram framework. Documentation for Pyrogram can be found here: https://docs.pyrogram.org/
 
