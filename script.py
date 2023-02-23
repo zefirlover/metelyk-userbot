@@ -3,14 +3,9 @@ import os
 
 my_var = os.environ.get('TEST')
 
-if my_var:
-    print(f'The value of MY_ENV_VAR is: {my_var}')
-else:
-    print('MY_ENV_VAR is not set')
 
-
-api_id = 18533141
-api_hash = "1a4ca40f3d29182267c4a506a1e6e644"
+api_id = os.environ.get('API_ID')
+api_hash = os.environ.get('API_HASH')
 
 chat_id = -1001725834609
 reaction = "🤡"
