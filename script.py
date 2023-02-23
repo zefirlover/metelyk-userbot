@@ -1,9 +1,6 @@
 from pyrogram import Client, types
 import os
 
-my_var = os.environ.get('TEST')
-
-
 api_id = os.environ.get('API_ID')
 api_hash = os.environ.get('API_HASH')
 
