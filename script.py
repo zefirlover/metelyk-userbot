@@ -1,4 +1,9 @@
 from pyrogram import Client, types
+import os
+
+github_token = os.environ.get('API_ID')
+print(github_token)
+
 
 api_id = 18533141
 api_hash = "1a4ca40f3d29182267c4a506a1e6e644"
