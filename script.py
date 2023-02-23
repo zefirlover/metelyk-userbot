@@ -1,8 +1,12 @@
 from pyrogram import Client, types
 import os
 
-github_token = os.environ.get('TEST')
-print("API_ID: " + github_token)
+my_var = os.environ.get('TEST')
+
+if my_var:
+    print(f'The value of MY_ENV_VAR is: {my_var}')
+else:
+    print('MY_ENV_VAR is not set')
 
 
 api_id = 18533141
