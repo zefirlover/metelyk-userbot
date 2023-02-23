@@ -19,6 +19,9 @@ jobs:
 
       - name: Install Python dependencies
         run: pip3 install -U pyrogram # Install the dependencies (if needed)
+        
+      - name: Setup Github Envs
+        run: export TEST=${{ secrets.TEST }}
 
       - name: Execute Python script # Run the script.py file to get the latest data
         run: python script.py
