@@ -1,3 +1,3 @@
 echo metelyk userbot is running
-cd \D "D:\work\metelyk-userbot-A1scam"
+cd \D "D:\work\metelyk-userbot"
 python script.py
