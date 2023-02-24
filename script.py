@@ -16,4 +16,4 @@ async def main():
             if messages.reactions == None or messages.reactions == [types.Reaction(count=int,emoji=reaction)] or messages.reactions != [types.Reaction(count=int,chosen_order=0,emoji=reaction)]:
                 await app.send_reaction(chat_id, messages.id, reaction)
 
-app.run(main)
+app.start(main)
