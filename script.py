@@ -16,4 +16,5 @@ async def main():
             if messages.reactions == None or messages.reactions == [types.Reaction(count=int,emoji=reaction)] or messages.reactions != [types.Reaction(count=int,chosen_order=0,emoji=reaction)]:
                 await app.send_reaction(chat_id, messages.id, reaction)
 
-app.start(main)
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
