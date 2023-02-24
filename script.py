@@ -13,9 +13,7 @@ async def main():
         # get_chat_history(chat_id, 10) get last 10 messages
         async for messages in app.get_chat_history(chat_id, 15):
             print(messages.reactions)
-            if messages.reactions == None:
-                await app.send_reaction(chat_id, messages.id, reaction)
-            elif messages.reactions == [types.Reaction(count=int,emoji=reaction)]:
+            if messages.reactions == None or messages.reactions == [types.Reaction(count=int,emoji=reaction)]:
                 await app.send_reaction(chat_id, messages.id, reaction)
 
 app.run(main())
